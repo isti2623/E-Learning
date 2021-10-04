@@ -15,7 +15,7 @@ const ShowDart = (props) => {
                             Price :{price}$
                         </Card.Text>
                     </Card.Body>
-                    <Button variant="primary">Show Details</Button>
+                    {/*  <Button variant="primary">Show Details</Button> */}
                 </Card>
             </Col>
         </div>

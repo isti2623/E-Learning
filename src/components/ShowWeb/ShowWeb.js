@@ -15,7 +15,7 @@ const ShowWeb = (props) => {
                             Price :{price}$
                         </Card.Text>
                     </Card.Body>
-                    <Button variant="danger">Show Details</Button>
+                    {/* <Button variant="danger">Show Details</Button> */}
                 </Card>
             </Col>
         </div>
