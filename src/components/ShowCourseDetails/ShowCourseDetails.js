@@ -11,9 +11,9 @@ const ShowCourseDetails = () => {
 
         fetch(url)
             .then(res => res.json())
-            .then(data => setCourseItem(data?.meals[0]));
+            .then(data => setCourseItem(data));
     }
-        , [courseItem]);
+        , [id]);
     return (
         <div>
             <Container>
