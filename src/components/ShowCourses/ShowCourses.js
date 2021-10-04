@@ -1,8 +1,14 @@
 import React from 'react';
 import { Card, Col, Button } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 
 const ShowCourses = (props) => {
-    const { name, img, price } = props.course;
+    const { name, img, price, id } = props.course;
+    const history = useHistory();
+
+    const handleClick = () => {
+        history.push(`/fooddetails/${id}`);
+    }
     return (
         <div>
             <Col>
@@ -14,7 +20,7 @@ const ShowCourses = (props) => {
                             Price :{price}$
                         </Card.Text>
                     </Card.Body>
-                    <Button variant="primary">Show Details</Button>
+                    <Button onClick={handleClick} variant="primary">Show Details</Button>
                 </Card>
             </Col>
         </div>
