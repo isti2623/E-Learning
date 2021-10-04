@@ -14,7 +14,7 @@ const ShowMongo = (props) => {
                             {price}
                         </Card.Text>
                     </Card.Body>
-                    <Button variant="success">Buy Now</Button>
+                    <Button variant="success">Show Details</Button>
                 </Card>
             </Col>
         </div>
