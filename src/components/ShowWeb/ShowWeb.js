@@ -12,7 +12,7 @@ const ShowWeb = (props) => {
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
                         <Card.Text>
-                            {price}
+                            Price :{price}$
                         </Card.Text>
                     </Card.Body>
                     <Button variant="danger">Show Details</Button>
