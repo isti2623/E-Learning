@@ -7,7 +7,7 @@ const ShowCourseDetails = () => {
     const { id } = useParams();
     const [courseItem, setCourseItem] = useState([]);
     useEffect(() => {
-        const url = `https://raw.githubusercontent.com/isti2623/fake-data/main/all.json=${id}`;
+        const url = `https://raw.githubusercontent.com/isti2623/fake-data/main/all.json/${id}`;
 
         fetch(url)
             .then(res => res.json())
